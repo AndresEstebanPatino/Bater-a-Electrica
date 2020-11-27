@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>dombo</title>
+</head>
+<body>
+    <div class="container-fluid p-0 m-0">
+        <header class="row header col-12 d-flex align-content-center p-0 m-0">
+            <div class="logo col-12 col-lg-6 d-flex justify-content-center pt-2 p-lg-3 mt-1">
+                <img id="logo" class="img-fluid mw-10 h-auto mr-lg-auto" src="logo.png" alt="">
+            </div>
+            <div class="navbar col-12 col-lg-6 d-flex justify-content-center mt-3">
+                <ul class="nav d-flex flex-column flex-sm-row">
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Premium</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Help</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Download</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#" id="data-singup">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Log In</a>
+                    </li>
+                  </ul>
+
+            </div>
+          </header>
+        <div class="row main col-12 p-0 m-0 ">
+            <div class="showcase-text col-12 col-lg-6 p-md-3 d-flex flex-column align-items-center mt-5">
+                <h1 id="encabezado-texto" class="encabezado text-white">Music for <br> everyone.</h1>
+                <p id="encabezado-parrafo" class="text-center ">Millons of songs. No credit card needed.</p>
+                <input class="boton-1" type="button" value="Hit the"/>
+            </div>
+            <div class="col-12 col-lg-6 order-first order-md-last padre position-relative" >
+                <img class="radio w-100" src="drumkit.png" alt="">
+                <div class="difuminado"> </div> 
+                    <button data-boton="bombo"class="bombo efectoBotones" type="button" value=>Bombo-L</button>
+                    <button data-boton="hit-hat"class="hit-hat efectoBotones" type="button" value=>Hit-hat-A</button>
+                    <button data-boton="redoblante"class="redoblante efectoBotones" type="button" value=>Redoblante-S</button>
+                    <button data-boton="crash"class="crash efectoBotones" type="button" value=>Crash-K</button>
+                    <button data-boton="tom-1"class="tom-1 efectoBotones" type="button" value=>Tom-1-W</button> 
+                    <button data-boton="tom-2"class="tom-2 efectoBotones" type="button" value=>Tom-2-E</button> 
+                    <button data-boton="tom-3"class="tom-3 efectoBotones" type="button" value=>Tom-3-O</button> 
+                    <button data-boton="tom-4"class="tom-4 efectoBotones" type="button" value=>Tom-4-I</button> 
+                    <audio id="hit-hat" data-boton="hit-hat" src="hit-hat.wav"></audio>      
+                    <audio id="bombo" data-boton="bombo" src="bombo.wav"></audio>
+                    <audio id="redoblante" data-boton="redoblante" src="redoblante.wav"></audio>
+                    <audio id="crash" data-boton="crash" src="crash.wav"></audio>
+                    <audio id="tom1" data-boton="tom-1" src="tom1.wav"></audio>
+                    <audio id="tom2" data-boton="tom-2" src="tom2.wav"></audio>
+                    <audio id="tom3" data-boton="tom-3" src="tom3.wav"></audio>
+                    <audio id="tom4" data-boton="tom-4" src="tom4.wav"></audio>
+            </div>
+
+        </div>
+        <div class="row footer col-12 p-1 m-0 d-flex flex-column align-items-center text-center">
+            <h3 id="ali" class="encabezado-footer">Try Premium free for 1 month.</h3>
+            <p class="parrafo-footer">Play millions of songs add-free, on-demand, and offline.</p>
+            <input id="boton" class="boton-2" type="button" value="SEE PRICING"/>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
